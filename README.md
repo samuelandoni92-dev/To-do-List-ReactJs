@@ -1,16 +1,37 @@
-# React + Vite
+# ✅ To-Do App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de lista de tareas construida con React y Vite. Permite agregar, completar y eliminar tareas.
 
-Currently, two official plugins are available:
+🔗 **[Ver demo en vivo](https://samuelandoni92-dev.github.io/To-do-List-ReactJs/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Capturas
 
-## React Compiler
+![Agregar tareas](screenshots/agregar%20tarea.png)
+![Tareas agregadas](screenshots/tareas%20agregadas.png)
+![Tareas completadas](screenshots/tareas%20completadas.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ¿Qué hace?
 
-## Expanding the ESLint configuration
+- Agregar tareas nuevas (con botón o tecla Enter)
+- Marcar tareas como completadas
+- Eliminar tareas
+- Contador de tareas pendientes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tecnologías
+
+- React (hooks: `useState`)
+- Vite
+- CSS puro
+
+## Qué aprendí
+
+Mi primer proyecto en React. Entendí la diferencia entre manipular el DOM directamente (como en JS puro) y dejar que React maneje el DOM a partir de cambios de estado. También practiqué el concepto de inmutabilidad: nunca modificar el array de tareas directamente, sino crear copias nuevas con `map`, `filter` y el spread operator.
+
+## Cómo correrlo localmente
+
+```bash
+git clone https://samuelandoni92-dev.github.io/To-do-List-ReactJs/
+cd to-do-react
+npm install
+npm run dev
+```
